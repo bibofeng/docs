@@ -27,4 +27,27 @@ Using recurrent plot (RP) or Gramien Angular Difference Field to transform time 
 ### Classification of Time-Series Images Using Deep Convolutional Neural Networks [github](https://github.com/Shuchismita-Biswas/AML_Project_Fall19)
 * Gramian Angular Field (GAF)
 * Recurrence Plots (RP)
-* Code [notebook](https://github.com/Shuchismita-Biswas/AML_Project_Fall19/blob/master/ECG200_notebook.ipynb) This notebook illustrates how time series data can be embedded into images using two different methods : (a) Recurrence Plots (RP) and (b) Gramian Angular Field (GAF).
+* Code [notebook](https://github.com/Shuchismita-Biswas/AML_Project_Fall19/blob/master/ECG200_notebook.ipynb) 
+
+    This notebook illustrates how time series data can be embedded into images using two different methods : (a) Recurrence Plots (RP) and (b) Gramian Angular Field (GAF).
+
+
+### Using python to work with time series data: list source [Source](https://github.com/MaxBenChrist/awesome_time_series_in_python)
+
+### pyts: a Python package for time series classification [github](https://github.com/johannfaouzi/pyts)
+pyts is a Python package for time series classification. It aims to make time series classification easily accessible by providing preprocessing and utility tools, and implementations of state-of-the-art algorithms. Most of these algorithms transform time series, thus pyts provides several tools to perform these transformations.
+[process image](https://pyts.readthedocs.io/en/stable/modules/image.html)
+* MarkovTransitionField
+* GramianAngularField
+* RecurrencePlot
+
+* Markov transition fields (MTF) [site](https://towardsdatascience.com/advanced-visualization-techniques-for-time-series-analysis-14eeb17ec4b0) 
+
+    from pyts.image import RecurrencePlot, GramianAngularField
+    transformer = RecurrencePlot()
+    GAF= GramianAngularField()
+    x_new = transformer.transform(X)
+    gaf_data = GAF.transform(X)
+
+
+
